@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "360Exporter",
+    "description": "360网盘Aria2下载",
+    "version": "0.0.1",
+    "content_scripts": [{
+            "js": ["360Exporter.js"],
+            "matches": ["*://*.yunpan.360.cn/*"]
+        }]
+}
