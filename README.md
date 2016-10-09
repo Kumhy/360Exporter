@@ -6,13 +6,18 @@
 
 所有支持userscript的浏览器
 
-- [360Exporter.user.js](https://raw.githubusercontent.com/Kumhy/360Exporter/master/360Exporter.user.js)：下载后拖动360Exporter.user.js至浏览器即可。
+- [360Exporter.user.js](https://raw.githubusercontent.com/Kumhy/360Exporter/master/src/360Exporter.user.js)：下载后拖动360Exporter.user.js至浏览器即可。
+- Chrome 打包下载后，扩展程序-开发者模式-加载已解压的扩展程序，选择src目录即可。
 
 ##更新
 
 0.0.1
 
     > 用了2天的空余时间写的，功能比较简陋，慢慢完善吧。
+
+0.0.2
+
+    > 使用NetBeans管理项目，简单优化了部分代码。
 
 ## License
 

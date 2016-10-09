@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name                360Exporter
 // @namespace           https://github.com/Kumhy/360Exporter
-// @version             0.0.1
+// @version             0.0.2
 // @description         360网盘Aria2下载
-// @match               *://*.yunpan.360.cn/*
+// @match               *://*.yunpan.360.cn/my/*
 // @copyright           2016+, Kuma
 // ==/UserScript==
 
@@ -89,11 +89,11 @@ var Ex = {
                 },
                 save: function () {
                     var _url = $('#aria2_rpc_url_id').val();
-                    if (_url !== undefined && this.jsonrpc_path !== _url) {
+//                    if (_url !== undefined && this.jsonrpc_path !== _url) {
                         this.jsonrpc_path = _url;
                         localStorage.setItem("jsonrpc_path", this.jsonrpc_path);
                         base.aria2_init();
-                    }
+//                    }
                 }
             },
             aria2_dl: function (data) {
@@ -253,7 +253,6 @@ var Ex = {
                         };
 
                         websocket.onerror = function (event) {
-                            console.warn("error", event);
                             msg.error("Aria2服务连接失败，请检查RPC设置.");
                             ws_callback = {};
                             $("#rpc_status").text("未连接");
