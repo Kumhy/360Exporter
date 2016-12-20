@@ -175,7 +175,7 @@ var Ex = {
                                 f.fileName = f.oriName;
                                 if (f.isDir == 1) {
                                     _this.getFolderList(array[i]);
-                                } else if (f.fileType == 'file') {
+                                } else /* if (f.fileType == 'file') */ {
                                     _this.getFile(f);
                                 }
                             }
